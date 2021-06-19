@@ -136,7 +136,22 @@
                     "options": {
                         "settings": {
                             "entitySet": "Travel",
-                            "sectionLayout": "Tabs"
+                            "sectionLayout": "Tabs",
+                            "content": {
+                                "body": {
+                                    "sections": {
+                                        "itinerary": {
+                                            "name": "com.fe.travels.fiori3.travels.ext.GeoMap",
+                                            "position": {
+                                                "anchor": "Booking",
+                                                "placement": "After"
+                                            },
+                                            "type": "XMLFragment",
+                                            "title": "Itinerary"
+                                        }
+                                    }
+                                }
+                            }
                         }
                     },
                     "controlAggregation": "midColumnPages",
