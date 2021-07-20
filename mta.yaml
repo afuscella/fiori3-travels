@@ -1,7 +1,7 @@
 _schema-version: "3.2"
 ID: sap-btp-sapui5
-description: A Fiori application.
-version: 0.0.1
+description: Northwind Web Application
+version: 1.0.1
 modules:
 - name: sap-btp-sapui5-dest-content
   type: com.sap.application.content
@@ -63,16 +63,17 @@ resources:
   parameters:
     config:
       HTML5Runtime_enabled: true
-      init_data:
-        instance:
-          destinations:
-          - Authentication: NoAuthentication
-            Name: ui5
-            ProxyType: Internet
-            Type: HTTP
-            URL: https://ui5.sap.com
-          existing_destinations_policy: update
-      version: 1.0.0
+      # init_data:
+      #   instance:
+      #     destinations:
+      #     - Authentication: NoAuthentication
+      #       Name: Northwind
+      #       ProxyType: Internet
+      #       Type: HTTP
+      #       URL: https://services.odata.org
+      #       HTML5.DynamicDestination: true
+      #     existing_destinations_policy: update
+      version: 1.0.1
     service: destination
     service-name: sap-btp-sapui5-dest-srv
     service-plan: lite
